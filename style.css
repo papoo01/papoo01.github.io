@@ -105,12 +105,14 @@ button {
 
 #slider {
     display: flex;
-}
+    position: relative;
+    width: 100%;
+  }
 
 
 #slider img {
     max-height: 550px;
-    width: 50%;
+    width: 55%;
     /*avoir une meilleure compréssion lors du retrecissement de la fênètre*/
 }
 
@@ -247,16 +249,16 @@ button {
 #nos_services {
     position: relative;
     width: 100%;
+    margin-top: 100px;
 }
 
 
 .container_title {
-
+    margin-bottom: 45px;
 
 }
 
 .enveloppe_titre {
-
     text-align: center;
     /*padding: 4px 4px 4px 4px;*/
    
@@ -289,6 +291,7 @@ button {
     justify-content: center;
     position: relative;
     height: 435px;
+    margin-top: 70px;
     /*justify-content: space-between;*/
     /*séparation bloc pc et du bloc paragraphe_services*/
 }
@@ -372,6 +375,8 @@ button {
 #nos_projets {
     position: relative;
     width: 100%;
+    margin-top: 100px;
+    background-color: #f5f5f5;
 }
 
 /* MENU */
@@ -380,6 +385,7 @@ button {
 	display: flex; 
 	align-items: center;
     justify-content: center;
+    margin-bottom: 45px;
 }
 
 .listeProjets{    

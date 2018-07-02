@@ -1,6 +1,7 @@
 /*début éléments génerale*/
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -20,13 +21,13 @@ h1 {
     color: white;
 }
 
-#slider_description p{
-    
+#slider_description p {
+
     color: white;
 }
 
 button {
-    
+
     border: 0;
     border-bottom: 3px solid rgb(0, 138, 230);
     background-color: rgb(93, 170, 207);
@@ -61,10 +62,10 @@ button {
 
 }
 
-#menu {
-}
+#menu {}
 
-#menu ul, li {
+#menu ul,
+li {
     display: flex;
     list-style-type: none;
     margin-top: 0;
@@ -101,7 +102,7 @@ button {
     display: flex;
     position: relative;
     width: 100%;
-  }
+}
 
 
 #slider img {
@@ -255,11 +256,6 @@ button {
 .enveloppe_titre {
     text-align: center;
     /*padding: 4px 4px 4px 4px;*/
-   
-}
-
-.titre {
-   
 }
 
 .ligne_decoration {
@@ -307,18 +303,10 @@ button {
     position: relative;
 }
 
-/*
-.titre_paragraphe{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-*/
-
 .container_graphe {
     display: flex;
     position: relative;
-    
+
 }
 
 .graphe {
@@ -326,7 +314,7 @@ button {
     top: 38px;
     left: -48px;
     color: rgb(93, 170, 207);
-   
+
 }
 
 .cercle {
@@ -339,19 +327,16 @@ button {
     border: 1px solid rgb(115, 115, 115);
 }
 
-/*position: absolute;
-	top: 20px;
-	left: -50px;
-	font-size: 50px;
-	border:2px dashed pink;
-	z-index: 2;*/
+.text {
+    margin: 0px;
+}
 
 .point_bleu i {
     position: absolute;
     top: 38px;
     left: -25px;
     color: rgb(93, 170, 207);
-    
+
 }
 
 .titre_paragraphe h3 {
@@ -375,24 +360,24 @@ button {
 
 /* MENU */
 
-.menuProjets{ 
-	display: flex; 
-	align-items: center;
+.menu_projets {
+    display: flex;
+    align-items: center;
     justify-content: center;
     margin-bottom: 45px;
 }
 
-.listeProjets{    
-	list-style: none;
-	background-color: transparent;
-	display: flex;
+.liste_projets {
+    list-style: none;
+    background-color: transparent;
+    display: flex;
     align-items: center;
-	padding: 0;
+    padding: 0;
     margin: auto;
 }
 
-.listeProjets a{
-	text-decoration: none;
+.liste_projets a {
+    text-decoration: none;
     font-family: Helvetica, sans serif;
     color: white;
     display: flex;
@@ -403,123 +388,68 @@ button {
     align-items: center;
 }
 
-.listeProjets i{
-	font-size: 20px;
-	position: absolute;
-	bottom: 0;
-	visibility: hidden;
-	transform: translateY(100%) translateX(-50%); /*deplacement icone dans le bon ordre */
-	line-height: 9px;
-	left: 50%;
+.liste_projets i {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    transform: translateY(100%) translateX(-50%);
+    /*deplacement icone dans le bon ordre */
+    line-height: 9px;
+    left: 50%;
 }
 
-.listeProjets1{
-	width: 100px;
-	height: 45px;
-	display: flex;
-	justify-content: center;
+.liste_projets1 {
+    width: 100px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
-	background-color: rgb(93, 170, 207);
-	border-bottom: solid 2px  rgb(0, 138, 230);
+    background-color: rgb(93, 170, 207);
+    border-bottom: solid 2px rgb(0, 138, 230);
 }
 
-.listeProjets1 i{
-	visibility: visible;
-	color: rgb(0, 138, 230);
+.liste_projets1 i {
+    visibility: visible;
+    color: rgb(0, 138, 230);
 }
 
 
-.listeProjets2, .listeProjets3, .listeProjets4{
-	width: 100px;
-	height: 45px;
-	display: flex;
-	justify-content: center;
-	background-color: #b2a6a3;
+.liste_projets2,
+.liste_projets3,
+.liste_projets4 {
+    width: 100px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    background-color: #b2a6a3;
     align-items: center;
     position: relative;
 
 }
 
-.listeProjets li:hover > i
-{
-	visibility: visible;
-	color:  rgb(0, 138, 230);
+.liste_projets li:hover > i {
+    visibility: visible;
+    color: rgb(0, 138, 230);
 }
 
-.listeProjets1{
-	border-radius: 5px 0px 0px 5px; 
-}
-.listeProjets4{
-	border-radius: 0px 5px 5px 0px ;
+.liste_projets1 {
+    border-radius: 5px 0px 0px 5px;
 }
 
-.listeProjets2:hover, .listeProjets3:hover, .listeProjets4:hover {
-	background-color: rgb(93, 170, 207);
-	border-bottom: solid 2px rgb(0, 138, 230);
+.liste_projets4 {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.liste_projets2:hover,
+.liste_projets3:hover,
+.liste_projets4:hover {
+    background-color: rgb(93, 170, 207);
+    border-bottom: solid 2px rgb(0, 138, 230);
 }
 
 /* FIN MENU */
-
-/*#container_projets_images{ solution originel à partie hors menu > nos services
-	position: relative;
-	width: 100%;
-	border: 2px solid red;
-}
-
-#projets_images{
-	display: flex;
-	justify-content: center;
-	border: 2px dashed green;
-
-}
-
-.container_images{
-	display: flex;
-	flex-flow: wrap;
-	justify-content: center;
-	border: 2px dashed blue;
-}
-
-.images:hover{
-	position: relative;
-	text-align: center;
-	width: auto 0;
-	border: 2px dashed yellow;
-}
-
-.images figure{
-	display: inline-block;
-	width: 300px;
-	border: 2px dashed gray;
-}
-
-.images img{
-	display: block;
-	width: 300px;
-	border: 2px dashed pink;
-
-}
-.images figcaption{
-	position: absolute;
-	width: 77%;
-	top: 124px; 
-	left: 42px ;
-	border: 2px dashed green;
-}
-/*#projets_images p{
-	display: flex;
-	flex-flow: wrap;
-	justify-content: center;
-	border: 2px dashed blue;
-}*/
-
-/*
-#projets_images img{
-	width: auto;
-	height: 240px;
-	border: 2px dashed pink;
-}*/
 
 .images {
     position: relative;
@@ -560,14 +490,16 @@ figure img {
     color: white;
     text-align: left;
 }
+
 .images h4 {
     margin-left: 20px;
 }
 
-.images p{
+.images p {
     top: 5px;
     margin-left: 20px;
 }
+
 figure:hover figcaption {
     opacity: 1;
 }
@@ -602,7 +534,7 @@ figure:hover figcaption {
 
 #container_formulaire_de_contact {
     position: relative;
-    width: 100%;    
+    width: 100%;
 }
 
 #carte_google iframe {
@@ -671,18 +603,17 @@ figure:hover figcaption {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
     justify-content: center;
-    
+
 }
 
-input, textarea {    
+input, textarea {
     width: 90%;
     padding: 8px;
     border-radius: 4px;
     color: rgb(80, 80, 80);
     border: 2px solid lightgray;
-   
+
 }
 
 #titre_contact #button {
@@ -696,30 +627,85 @@ input, textarea {
     color: white;
 }
 
-#infos{
+#infos {
     margin-left: 12px;
 }
 
-#infos h5{
+#infos h5 {
     font-size: 1.4em;
     margin-left: 2px;
     margin-bottom: 0px;
 }
 
-#infos p{
+#infos p {
     margin-left: 2px;
     color: rgba(0, 0, 0, 0.7);
 }
 
-#infos strong{
+#infos strong {
     font-weight: bold;
     color: rgb(60, 60, 60);
 }
 
 /*footer: non spécifié*/
 
+/* ECRAN MOBILE : 600px */
+
 @media screen and (max-width: 600px) {
+
+    #logo {
+        margin-right: -420px;
+    }
+
     #menu {
         visibility: hidden;
     }
+
+    #slider {
+        display: none;
+    }
+
+    #pc_image {
+        display: none;
+    }
+    
+    .container_services{
+        margin-top: -30px;
+    }
+    
+    #enveloppe_paragraphe{
+       margin: 0px auto;  
+    }
+    
+    #text{
+        margin: 0px auto;   
+    }
+    .menu_projets ul {
+        width: 90%;
+    }
+
+    .images figure {
+        width: 90%;
+    }
+
+    .images figcaption {
+        display: none;
+    }
+
+    #carte_google {
+        display: flex;
+        position: absolute;
+        width: 98%;
+        margin-left: 1px;
+        transform: translateY(0%);
+    }
+
+    #titre_contact {
+        position: absolute;
+        margin: 0px auto;
+        width: 98%;
+        background-color: rgba(255, 255, 255, 1);
+        transform: translateY(238%);
+    }
+
 }

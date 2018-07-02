@@ -1,147 +1,180 @@
 /*début éléments génerale*/
-#bloc_page{
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-/* élements génerale */
 
-/* mise en forme texte */
-span{
-	color:#379fa7;
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Medium, arial, verdana, sans-serif;
 }
 
-#slider_description h1, p, button{
-	/*color: white;*/
+/* fin élements génerale */
+
+/* mise en forme */
+
+span {
+    color: rgb(93, 170, 207);
 }
-/*fin mise en forme texte */
+
+h1 {
+    color: white;
+}
+
+#slider_description p{
+    
+    color: white;
+}
+
+button {
+    
+    border: 0;
+    border-bottom: 3px solid rgb(0, 138, 230);
+    background-color: rgb(93, 170, 207);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+}
+
+/*fin mise en forme */
 
 /*début header*/
-#acceuil{
-	position: relative;
-	overflow: hidden;
-	border:2px solid black;
+
+#acceuil {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
-#title_principal{
-	display: flex;
-	justify-content: space-around;
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	border:2px dashed green;
+#title_principal {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    top: 0;
 }
 
-#logo{
-	border: 2px dashed red;
+#logo {
+    padding-top: 5px;
+
 }
 
-#menu{
-
-	border: 2px dashed blue;
+#menu {
 }
 
-#menu ul, li{
-	display: flex;
-	list-style-type: none;
-	border: 2px dashed purple;
+#menu ul, li {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0;
 }
 
-#menu a{
-	color: black;
-	text-decoration: none;
-	padding: 14px 16px;
-	border-top: 3px solid treansparent;
+#menu a {
+    color: black;
+    text-decoration: none;
+    /*padding: 30px 16px;*/
+    border-top: 3px solid transparent;
+    /*padding-top: 30px;*/
+    margin: 0px auto;
+    padding: 22px 10px 10px 10px;
 }
 
-#menu a:hover{
-	border-top: 3px solid #379fa7;
+#menu a:hover {
+    border-top: 3px solid #379fa7;
 }
 
-#menu a#active{
-	border-top: 3px solid rgb(55, 159, 167);
+#menu a#active {
+    border-top: 3px solid rgb(93, 170, 207);
 }
 
-#container_slider{/*dimensions du container*/
-	position: relative;
-	width: 200%;
-	margin-top: 95px; 
-	border: 2px solid green;
+/* SLIDER */
+
+#container_slider {
+    /*dimensions du container*/
+    position: relative;
+    width: 200%;
+    margin-top: 50px;
 }
 
-#slider{
-	display: flex;
-	border: 2px solid red;	
-}
+#slider {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
 
 
-#slider img{
-	width: 50%; /*avoir une meilleure compréssion lors du retrecissement de la fênètre*/
-	border: 2px dashed yellow;
+#slider img {
+    max-height: 550px;
+    width: 55%;
+    /*avoir une meilleure compréssion lors du retrecissement de la fênètre*/
 }
 
-#container_arrows{
-	position: relative;
-	border: 2px dashed blue;
+#container_arrows {
+    position: relative;
+    width: 100%;
 }
 
-#arrow_left{
-	position: absolute;
-	top:-320px;
-	height: 70px;
-	left: -1%;
-	width: 2%;
-	border-radius: 50px;
-	background-color: rgb(107, 76, 76);
-	border: 2px dashed red;
+#arrow_left {
+    position: absolute;
+    top: -320px;
+    height: 70px;
+    left: -1%;
+    width: 2%;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-#arrow_left i{
-	position: absolute;
-	top: 25px; 
-	right: 49%;
-	width: 10%;
-	border: 2px dashed green;
+#arrow_left i {
+    position: absolute;
+    top: 25px;
+    right: 38%;
+    width: 10%;
+    color: white;
 }
 
-#arrow_right{
-	position: absolute;
-	top: -320px;
-	height: 70px;
-	right: 49%;
-	width: 2%;
-	border-radius: 50px;
-	background-color: rgb(107, 76, 76);
-	border: 2px dashed black;
+#arrow_right {
+    position: absolute;
+    top: -320px;
+    height: 70px;
+    right: 49%;
+    width: 2%;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-#arrow_right i{
-	position: absolute;
-	top: 25px;
-	right: 50%; /*48% ou 1780px*/
-	width: 10%;
-	border: 2px dashed purple;
+#arrow_right i {
+    position: absolute;
+    top: 25px;
+    right: 57%;
+    /*48% ou 1780px*/
+    width: 10%;
+    color: white;
 }
 
-#timeline{
-	border: 2px dashed ;
+#timeline {
+    margin-top: -10px;
+    height: 5px;
+    width: 7%;
+    background-color: rgb(93, 170, 207);
 }
 
-#container_slider_description{
-	position: relative;
-	width: 100%;
-	border: 2px dashed purple
+#container_slider_description {
+    position: relative;
+    width: 100%;
 }
 
-#slider_description{
-	position: absolute;
-	top: -350px;
-	width: 100%;
-	text-align: left;
-	margin-left: 275px;
-	border: 2px dashed pink;
+#slider_description {
+    position: absolute;
+    top: -380px;
+    width: 100%;
+    text-align: left;
+    margin-left: 275px;
+
 }
+
+/* FIN SLIDER */
+
 /*-------solution 1-------
 #container_slider{
 	width: 100%;
@@ -203,76 +236,77 @@ span{
 
 /*fin header*/
 
-
-
 /*début corps: sections*/
+
 /*-------------Nos services-------------*/
-#nos_services{
-	width: 100%;
+
+#nos_services {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
 }
 
 
-.container_title{
-
-	border: 2px dashed red;
-
-}
-
-.enveloppe_titre{
-	text-align: center;
-	border: 2px dashed green;
-	padding: 4px 4px 4px 4px;
-}
-
-.titre{
-	border: 2px dashed brown;
-	padding: 4px 4px 4px 4px;
-}
-
-.ligne_decoration{
-	border: 2px dashed black;
-	padding: 4px 4px 4px 4px;
-}
-
-.cercle_decoration{
-	border: 2px dashed blue;
-	padding: 4px 4px 4px 4px;
-}
-
-
-.container_services{
-	display: flex;
-	justify-content: center;
-	height: 460px;
-	/*justify-content: space-between;*/ /*séparation bloc pc et du bloc paragraphe_services*/
- 	border: 2px dashed green;
-}
-
-#pc_image{
-
-	border: 2px dashed black; 
+.container_title {
+    margin-bottom: 45px;
 
 }
 
-#enveloppe_paragraphe{
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: flex-end;
-	border: 2px dashed pink;
-	margin-left: 140px;
-	
+.enveloppe_titre {
+    text-align: center;
+    /*padding: 4px 4px 4px 4px;*/
+   
 }
 
-.container_services_description{
-	position: relative;
-	border: 2px dashed yellow; 
+.titre {
+   
 }
 
-.services_description{
-	
-	border:2px dashed green;
-}	
+.ligne_decoration {
+    position: relative;
+    height: 1px;
+    width: 100px;
+    margin: 0px auto;
+    /*center elément*/
+    /* ?px(haut et bas) auto(droite et gauche) */
+    background-color: rgb(115, 115, 115);
+}
+
+.cercle_decoration {
+    position: relative;
+    bottom: 8px;
+    display: flex;
+    justify-content: center;
+    color: rgb(93, 170, 207);
+}
+
+.container_services {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 435px;
+    margin-top: 70px;
+    /*justify-content: space-between;*/
+    /*séparation bloc pc et du bloc paragraphe_services*/
+}
+
+#enveloppe_paragraphe {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 160px;
+}
+
+.container_services_description {
+    position: relative;
+    width: 100%;
+}
+
+.services_description {
+    position: relative;
+}
+
 /*
 .titre_paragraphe{
 	display: flex;
@@ -280,65 +314,154 @@ span{
 	justify-content: flex-end;
 }
 */
-.container_graphe{
-	display: flex;
-	position: relative;
-	
-	border: 2px dashed red;
+
+.container_graphe {
+    display: flex;
+    position: relative;
+    
 }
 
-.graphe{
-	position: absolute;
-	top: 20px;
-	left: -50px;
-	z-index: 1;
-	border:2px dashed blue;
+.graphe {
+    position: absolute;
+    top: 38px;
+    left: -48px;
+    color: rgb(93, 170, 207);
+   
 }
 
-.cercle{
-	position: absolute;
+.cercle {
+    position: absolute;
+    top: 20px;
+    left: -65px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid rgb(115, 115, 115);
+}
+
+/*position: absolute;
 	top: 20px;
 	left: -50px;
 	font-size: 50px;
 	border:2px dashed pink;
-	z-index: 2;
+	z-index: 2;*/
+
+.point_bleu i {
+    position: absolute;
+    top: 38px;
+    left: -25px;
+    color: rgb(93, 170, 207);
+    
 }
 
-.point_bleu{
-	position: absolute;
-	top: 20px;
-	left: -50px;
-	z-index: 3;
-	border:2px dashed red;
+.titre_paragraphe h3 {
+    margin-left: 10px;
 }
-.text{
-	
-	border: 2px dashed gray;
+
+.titre_paragraphe p {
+    position: relative;
+    top: -20px;
+    margin-left: 10px;
 }
 
 /*---------------Nos projets--------------------*/
-#nos_projets{
-	width: 100%;
-	/*border: 2px solid black;*/
+
+#nos_projets {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #f5f5f5;
 }
 
-#container_bar_navigation_projets{
-	
-	border: 2px dashed blue;
+/* MENU */
+
+.menuProjets{ 
+	display: flex; 
+	align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
 }
 
-#bar_navigation_projets ul, li{
+.listeProjets{    
+	list-style: none;
+	background-color: transparent;
+	display: flex;
+    align-items: center;
+	padding: 0;
+    margin: auto;
+}
+
+.listeProjets a{
+	text-decoration: none;
+    font-family: Helvetica, sans serif;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.listeProjets i{
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+	visibility: hidden;
+	transform: translateY(100%) translateX(-50%); /*deplacement icone dans le bon ordre */
+	line-height: 9px;
+	left: 50%;
+}
+
+.listeProjets1{
+	width: 100px;
+	height: 45px;
 	display: flex;
 	justify-content: center;
-	list-style-type: none;
-	border: 2px dashed red;
+    align-items: center;
+    position: relative;
+	background-color: rgb(93, 170, 207);
+	border-bottom: solid 2px  rgb(0, 138, 230);
 }
 
-#bar_navigation_projets a{
-	text-decoration: none;
+.listeProjets1 i{
+	visibility: visible;
+	color: rgb(0, 138, 230);
 }
 
-#container_projets_images{
+
+.listeProjets2, .listeProjets3, .listeProjets4{
+	width: 100px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	background-color: #b2a6a3;
+    align-items: center;
+    position: relative;
+
+}
+
+.listeProjets li:hover > i
+{
+	visibility: visible;
+	color:  rgb(0, 138, 230);
+}
+
+.listeProjets1{
+	border-radius: 5px 0px 0px 5px; 
+}
+.listeProjets4{
+	border-radius: 0px 5px 5px 0px ;
+}
+
+.listeProjets2:hover, .listeProjets3:hover, .listeProjets4:hover {
+	background-color: rgb(93, 170, 207);
+	border-bottom: solid 2px rgb(0, 138, 230);
+}
+
+/* FIN MENU */
+
+/*#container_projets_images{ solution originel à partie hors menu > nos services
 	position: relative;
 	width: 100%;
 	border: 2px solid red;
@@ -358,18 +481,21 @@ span{
 	border: 2px dashed blue;
 }
 
-.images{
+.images:hover{
 	position: relative;
 	text-align: center;
+	width: auto 0;
 	border: 2px dashed yellow;
 }
 
 .images figure{
-
+	display: inline-block;
+	width: 300px;
 	border: 2px dashed gray;
 }
 
 .images img{
+	display: block;
 	width: 300px;
 	border: 2px dashed pink;
 
@@ -393,55 +519,122 @@ span{
 	width: auto;
 	height: 240px;
 	border: 2px dashed pink;
+}*/
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-right: 2px;
+    flex-wrap: wrap;
+
 }
+
+figure {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 87px;
+    margin: 0;
+    padding: 4px;
+
+}
+
+
+figure img {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.images figcaption {
+    position: absolute;
+    bottom: -158px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 98%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    text-align: left;
+}
+.images h4 {
+    margin-left: 20px;
+}
+
+.images p{
+    top: 5px;
+    margin-left: 20px;
+}
+figure:hover figcaption {
+    opacity: 1;
+}
+
+.oeil_cyclope {
+    position: absolute;
+    top: -25px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgb(93, 170, 207);
+    border: 2px solid white;
+}
+
+.oeil_cyclope i {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+}
+
+
 /*fin corps*/
 
 /*------------Formulaire de contact-------------*/
-#formulaire_de_contact{
-	width: 100%;
-	height: 660px;
-	border: 2px solid red;
 
+#formulaire_de_contact {
+    position: relative;
+    max-width: 100%;
+    max-height: 660px;
 }
 
-#container_formulaire_de_contact{
-	position: relative;
-	width: 100%;
+#container_formulaire_de_contact {
+    position: relative;
+    width: 100%;    
 }
 
-#carte_google{
-	width: 100%;
-	height: 660px;
-	border: 2px dashed black;
+#carte_google iframe {
+    position: absolute;
+    /*margin: 0 auto;*/
+    height: 660px;
+    width: 99.8%;
+    /*650px*/
+    opacity: 0.5;
 }
 
-#carte_google iframe{
-	position: absolute;
-	width: 100%;
-	height: 650px; /*650px*/
-	opacity: 0.7;
-	border: 2px dashed yellow;
+#fond_bleu {
+    width: 99.9%;
+    height: 660px;
+    background-color: rgb(93, 170, 207);
 }
 
-#fond_bleu{
-	width: 100%;
-	height: 650px;
-	background-color: rgb(153,230,255);
-}
 
-#contact{
-	display: flex;
-	justify-content: flex-end;
-	position: absolute;
-	bottom: 100px;
-	right: 1;
-	left: 0;
-	width: 100%; /*248.44*504*/
-	height: 500px;
-	z-index: 1;
-	border: 2px dashed gray;
+#contact {
+    /* width: 100%; /**/
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 70px;
+    right: 1px;
+    left: 0;
+    width: 99%;
+    /*248.44*504*/
+    height: 550px;
+    z-index: 1;
 
-	/*-----solution une (absolute)------
+    /*-----solution une (absolute)------
 	display: flex;
 	justify-content: flex-end;
 	position: absolute;
@@ -453,8 +646,7 @@ span{
 	height: 500px;
 	z-index: 1;
 	border: 2px dashed gray; */
-
-	/*-----solution bis (relative)------
+    /*-----solution bis (relative)------
 	display: flex;
 	justify-content: flex-end;
 	position: relative;
@@ -465,44 +657,69 @@ span{
 	height: 500px;
 	z-index: 1;
 	border: 2px dashed gray;*/
-
 }
 
-#titre_contact{
-	position: relative;
-	width: 380px;
-	margin-right: 120px;
-	border: 2px dashed blue;
-
+#titre_contact {
+    position: relative;
+    width: 380px;
+    margin-right: 120px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-#titre_contact form{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	border: 2px dashed pink;
-	justify-content: center;
+#titre_contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    justify-content: center;
+    
 }
 
-#titre_contact fieldset{
-	
-	border: 2px dashed yellow;
+input, textarea {    
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+    color: rgb(80, 80, 80);
+    border: 2px solid lightgray;
+   
 }
 
-#titre_contact fieldset div{
-	width: 100%;
-	
-
-	border: 2px dashed green;
+#titre_contact #button {
+    border: 0;
+    border-bottom: 3px solid rgb(0, 138, 230);
+    background-color: rgb(93, 170, 207);
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 35%;
+    font-size: 0.9em;
+    color: white;
 }
 
-input{
-
-	width: 98%;
+#infos{
+    margin-left: 12px;
 }
 
-#titre_contact #button{
-	width: 35%;
-
+#infos h5{
+    font-size: 1.4em;
+    margin-left: 2px;
+    margin-bottom: 0px;
 }
+
+#infos p{
+    margin-left: 2px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#infos strong{
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+
 /*footer: non spécifié*/
+
+@media screen and (max-width: 600px) {
+    #menu {
+        visibility: hidden;
+    }
+}

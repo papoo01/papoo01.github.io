@@ -245,7 +245,7 @@ li {
 #nos_services {
     position: relative;
     width: 100%;
-    /*margin-top: 100px;*/
+    margin-top: 100px;
 }
 
 .container_title {
@@ -269,10 +269,14 @@ li {
 }
 
 .cercle_decoration{
-    position: absolute;
+    /*position: absolute;
     right:  900px;
-    top: 60px;
+    top: 60px;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
     color:  rgb(93, 170, 207);
+    top: -14px;
 }
 
 .cercle_decoration i{

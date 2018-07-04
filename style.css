@@ -99,6 +99,7 @@ li {
 }
 
 #slider {
+    position: relative;
     display: flex;
     position: relative;
     width: 100%;
@@ -107,7 +108,7 @@ li {
 
 #slider img {
     max-height: 550px;
-    width: 55%;
+    width: 50%;
     /*avoir une meilleure compréssion lors du retrecissement de la fênètre*/
 }
 
@@ -244,9 +245,8 @@ li {
 #nos_services {
     position: relative;
     width: 100%;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
-
 
 .container_title {
     margin-bottom: 45px;
@@ -255,7 +255,7 @@ li {
 
 .enveloppe_titre {
     text-align: center;
-    /*padding: 4px 4px 4px 4px;*/
+    padding: 4px 4px 4px 4px;
 }
 
 .ligne_decoration {
@@ -265,15 +265,19 @@ li {
     margin: 0px auto;
     /*center elément*/
     /* ?px(haut et bas) auto(droite et gauche) */
-    background-color: rgb(115, 115, 115);
+    background-color: lightgrey;
 }
 
-.cercle_decoration {
-    position: relative;
-    bottom: 8px;
-    display: flex;
-    justify-content: center;
-    color: rgb(93, 170, 207);
+.cercle_decoration{
+    position: absolute;
+    right:  900px;
+    top: 60px;
+    color:  rgb(93, 170, 207);
+}
+
+.cercle_decoration i{
+    border: 5px solid white;
+    border-radius: 100px;
 }
 
 .container_services {
@@ -311,8 +315,8 @@ li {
 
 .graphe {
     position: absolute;
-    top: 38px;
-    left: -48px;
+    top: 42px;
+    left: -42px;
     color: rgb(93, 170, 207);
 
 }
@@ -321,21 +325,22 @@ li {
     position: absolute;
     top: 20px;
     left: -65px;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: 1px solid rgb(115, 115, 115);
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    border: 1px solid lightgrey;
 }
 
 .text {
     margin: 0px;
 }
 
-.point_bleu i {
+.point_bleu  i{
     position: absolute;
-    top: 38px;
-    left: -25px;
+    top: 35px;
+    left: -20px;
     color: rgb(93, 170, 207);
+    border: 6px solid white;
 
 }
 
@@ -565,30 +570,6 @@ figure:hover figcaption {
     /*248.44*504*/
     height: 550px;
     z-index: 1;
-
-    /*-----solution une (absolute)------
-	display: flex;
-	justify-content: flex-end;
-	position: absolute;
-	bottom: -1950px;
-	right: 0;
-	left: 1;
-	width: auto;
-	margin-right: 40px;
-	height: 500px;
-	z-index: 1;
-	border: 2px dashed gray; */
-    /*-----solution bis (relative)------
-	display: flex;
-	justify-content: flex-end;
-	position: relative;
-	bottom: 600px;
-	left: 0;
-	right: 1;
-	width: 248px; /*248.44*504
-	height: 500px;
-	z-index: 1;
-	border: 2px dashed gray;*/
 }
 
 #titre_contact {

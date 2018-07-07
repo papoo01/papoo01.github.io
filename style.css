@@ -332,7 +332,7 @@ li {
 
 }
 
-figure {
+figure#figure-slider{
     display: inline-block;
     position: relative;
     width: 20%;
@@ -342,7 +342,24 @@ figure {
     /*===> creer un decalage pour le slider (avec ou sans anime)*/
 }
 
-figure img {
+figure#figure-slider img {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    /*margin-bottom: 5px;*/
+}
+
+ .figure-portfolio {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 87px;
+    margin: 0;
+    /*padding: 4px;*/ /*===> creer un decalage pour le slider (avec ou sans anime)*/
+}
+
+.figure-portfolio img {
     display: inline-block;
     position: relative;
     width: 100%;

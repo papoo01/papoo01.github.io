@@ -34,7 +34,7 @@ div#slider {
 
 div#slider figure img {
 	width: 20%;
-	header:auto;
+	height:auto;
 	float: left;
 }
 
@@ -104,5 +104,5 @@ div#slider figure {
 	top: 30%;
 	left: 15%;
 	color: white;
-	font-size: 1.7vw;
+	font-size: 1.2vw;
 }

@@ -1,4 +1,5 @@
 /*début éléments génerale*/
+
 html,
 body {
     height: 100%;
@@ -49,7 +50,7 @@ button {
     justify-content: space-around;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     background-color: white;
     top: 0;
 }
@@ -96,9 +97,10 @@ li {
     width: 100%;
 }
 
-#ancre_une{
+#ancre_une {
     padding-top: 60px;
 }
+
 .container_title {
     margin-bottom: 45px;
 
@@ -119,18 +121,18 @@ li {
     background-color: lightgrey;
 }
 
-.cercle_decoration{
+.cercle_decoration {
     /*position: absolute;
     right:  900px;
     top: 60px;*/
     position: relative;
     display: flex;
     justify-content: center;
-    color:  rgb(93, 170, 207);
+    color: rgb(93, 170, 207);
     top: -14px;
 }
 
-.cercle_decoration i{
+.cercle_decoration i {
     border: 5px solid white;
     border-radius: 100px;
 }
@@ -139,11 +141,16 @@ li {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 435px;
+    height: 440px;
     margin-top: 70px;
     /*justify-content: space-between;*/
     /*séparation bloc pc et du bloc paragraphe_services*/
 }
+
+/*#pc_image{
+    position: relative;
+    width: 35em;
+}*/
 
 #enveloppe_paragraphe {
     display: flex;
@@ -155,7 +162,7 @@ li {
 
 .container_services_description {
     position: relative;
-    width: 100%;
+    width: 100;
 }
 
 .services_description {
@@ -190,7 +197,7 @@ li {
     margin: 0px;
 }
 
-.point_bleu  i{
+.point_bleu i {
     position: absolute;
     top: 35px;
     left: -20px;
@@ -207,6 +214,7 @@ li {
     position: relative;
     top: -20px;
     margin-left: 10px;
+    width: 100%;
 }
 
 /*---------------Nos projets--------------------*/
@@ -217,7 +225,7 @@ li {
     background-color: #f5f5f5;
 }
 
-#ancre_deux{
+#ancre_deux {
     padding-top: 60px;
 }
 
@@ -330,7 +338,8 @@ figure {
     width: 20%;
     /*height: 87px;*/
     margin: 0;
-    /*padding: 4px;*/ /*===> creer un decalage pour le slider (avec ou sans anime)*/
+    /*padding: 4px;*/
+    /*===> creer un decalage pour le slider (avec ou sans anime)*/
 }
 
 figure img {
@@ -385,7 +394,6 @@ figure:hover figcaption {
 
 /*fin corps*/
 
-
 /*------------Formulaire de contact-------------*/
 
 #formulaire_de_contact {
@@ -395,7 +403,7 @@ figure:hover figcaption {
     max-height: 885px;
 }
 
-#ancre_trois{
+#ancre_trois {
     padding-top: 60px;
     background-color: #f5f5f5;
 }
@@ -452,7 +460,8 @@ figure:hover figcaption {
 
 }
 
-input, textarea {
+input,
+textarea {
     width: 90%;
     padding: 8px;
     border-radius: 4px;
@@ -494,8 +503,146 @@ input, textarea {
 
 /*footer: non spécifié*/
 
-/* ECRAN MOBILE : 600px */
+/* ECRAN MOBILE : 320px */
 
+@media screen and (max-width: 320px) {
+
+    #logo {
+        margin-right: -420px;
+    }
+
+    #menu {
+        visibility: hidden;
+    }
+
+    #slider {
+        display: none;
+    }
+
+    #pc_image {
+        display: none;
+    }
+
+    .container_services {
+        margin-top: -30px;
+    }
+
+    .graphe,
+    .cercle,
+    .point_bleu {
+        display: none;
+
+    }
+
+    #titre_paragraphe {
+        display: none;
+    }
+
+    #enveloppe_paragraphe {
+        margin: 0px auto;
+    }
+
+    .text {
+        display: none;
+    }
+    .menu_projets ul {
+        width: 100%;
+    }
+
+    .images figure {
+        width: 100%;
+    }
+
+    .images figcaption {
+        display: none;
+    }
+
+    #carte_google {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        margin-left: 1px;
+        transform: translateY(0%);
+    }
+
+    #titre_contact {
+        position: absolute;
+        margin: 0px auto;
+        width: 98%;
+        background-color: rgba(255, 255, 255, 1);
+        transform: translateY(300%);
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    #logo {
+        margin-right: -420px;
+    }
+
+    #menu {
+        visibility: hidden;
+    }
+
+    #slider {
+        display: none;
+    }
+
+    #pc_image {
+        display: none;
+    }
+
+    .container_services {
+        margin-top: -30px;
+    }
+
+    .graphe,
+    .cercle,
+    .point_bleu {
+        display: none;
+
+    }
+
+    #enveloppe_paragraphe {
+        margin: 0px auto;
+    }
+
+    #text {
+        display: none;
+    }
+    .menu_projets ul {
+        width: 100%;
+    }
+
+    .images figure {
+        width: 100%;
+    }
+
+    .images figcaption {
+        display: none;
+    }
+
+    #carte_google {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        margin-left: 1px;
+        transform: translateY(0%);
+    }
+
+    #titre_contact {
+        position: absolute;
+        margin: 0px auto;
+        width: 98%;
+        background-color: rgba(255, 255, 255, 1);
+        transform: translateY(300%);
+    }
+
+}
+
+
+/* ECRAN MOBILE : 600px */
 @media screen and (max-width: 600px) {
 
     #logo {
@@ -514,15 +661,19 @@ input, textarea {
         display: none;
     }
 
-    .container_services{
+    .container_services {
         margin-top: -30px;
     }
 
-    #enveloppe_paragraphe{
-       margin: 0px auto;
+    #enveloppe_paragraphe {
+        margin: 0px auto;
     }
 
-    #text{
+    #titre_paragraphe {
+        display: none;
+    }
+
+    #text {
         margin: 0px auto;
     }
     .menu_projets ul {
@@ -550,7 +701,28 @@ input, textarea {
         margin: 0px auto;
         width: 98%;
         background-color: rgba(255, 255, 255, 1);
-        transform: translateY(238%);
+        transform: translateY(300%);
     }
 
 }
+
+
+/*@media screen and (max-width: 900px) {
+    #enveloppe_paragraphe {
+        position: absolute;
+        width: 100%;
+        transform: translateY(100%);
+    }
+
+    .container_services {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        /*height: 650px;*/
+        /*margin-top: 70px;
+        /*justify-content: space-between;*/
+        /*séparation bloc pc et du bloc paragraphe_services*/
+    }
+
+}
+/*

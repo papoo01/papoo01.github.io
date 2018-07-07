@@ -1,4 +1,3 @@
-
 @keyframes slidy {
 	0% { left: 0%; }
 	20% { left: 0%; }
@@ -55,7 +54,7 @@ div#slider figure {
 	border-radius: 50%;
 	font-size: 1.5rem;
 	top: 50%;
-	padding: 1rem 0.5rem;
+	padding: 1rem 0.5rem; 
 	background-color: rgba(0,0,0,0.20);
 	color: white;
 	left: -1.5rem;
@@ -67,7 +66,7 @@ div#slider figure {
 	border-radius: 50%;
 	font-size: 1.5rem;
 	top: 50%;
-	padding: 1rem 0.5rem;
+	padding: 1rem 0.5rem; 
 	background-color: rgba(0,0,0,0.20);
 	color: white;
 	right: -1.5rem;
@@ -104,5 +103,6 @@ div#slider figure {
 	top: 30%;
 	left: 15%;
 	color: white;
-	font-size: 1.2vw;
+	font-size: 1.2vw; /*pourcentage par rapport à la taille de la window/*
 }
+

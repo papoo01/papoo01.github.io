@@ -705,7 +705,7 @@ textarea {
 
 }
 
-/*@media screen and (max-width: 605px) and (max-width: 900px){
+@media screen and (max-width: 605px){
 
 
     #enveloppe_paragraphe {
@@ -728,18 +728,25 @@ textarea {
         margin-top: 70px;
         justify-content: space-between;
     }
-}*/
-
-
-@media screen and (max-width: 768px) {
-
-    #menu{
-        margin: 0 auto;
-    }
 }
 
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 768px) {
+    
+    #menu li {
+        margin-left: -10px;
+    }
+    
+    #pc_image{
+        margin: 0 auto;
+    }
+    
+    .paragraphe p{
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-width: 770px) and (max-width:900px){
 
 
     #enveloppe_paragraphe {

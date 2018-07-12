@@ -589,13 +589,6 @@ textarea {
     }
 }
 
-@media screen and (max-width: 320px) {
-
-    #titre_contact #button {
-        font-size: 0.75rem;
-    }
-
-}
 
 /*@media screen and (max-width: 425px) {
 
@@ -769,6 +762,15 @@ textarea {
         margin-left: 12px;
     }
 }
+
+@media screen and (max-width: 320px) {
+
+    #titre_contact #button {
+        font-size: 0.75rem;
+    }
+
+}
+
 
 
 /*@media screen and (max-width: 2560px) and (max-width: 2560px){

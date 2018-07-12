@@ -530,13 +530,6 @@ textarea {
 
 /* ECRAN MOBILE : 320px */
 
-@media screen and (max-width: 320px) {
-
-    #titre_contact #button {
-        font-size: 0.75rem;
-    }
-
-}
 
 
 @media screen and (max-width: 1440px) and (max-width: 1440px){
@@ -596,6 +589,13 @@ textarea {
     }
 }
 
+@media screen and (max-width: 320px) {
+
+    #titre_contact #button {
+        font-size: 0.75rem;
+    }
+
+}
 
 /*@media screen and (max-width: 425px) {
 

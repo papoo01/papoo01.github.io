@@ -143,7 +143,7 @@ li {
     position: relative;
     height: 440px;
     margin-top: 70px;
-    /*justify-content: space-between;*/
+    /*justify-content: space-between; 440px*/
     /*séparation bloc pc et du bloc paragraphe_services*/
 }
 
@@ -529,11 +529,7 @@ textarea {
 
 /*footer: non spécifié*/
 
-/* ECRAN MOBILE : 320px */
-
-
-
-@media screen and (max-width: 1440px) and (max-width: 1440px){
+@media screen and (max-width: 1440px) and (max-width: 1440px) {
 
     .images {
         position: relative;
@@ -588,67 +584,6 @@ textarea {
         top: -35px;
     }
 }
-
-
-/*@media screen and (max-width: 425px) {
-
-    #logo {
-        margin-right: -420px;
-    }
-
-    #menu {
-        visibility: hidden;
-    }
-
-    #slider {
-        display: none;
-    }
-
-
-    #pc_image {
-        display: none;
-    }
-
-    .container_services {
-        margin-top: -30px;
-    }
-
-    .graphe,
-    .cercle,
-    .point_bleu {
-        display: none;
-
-    }
-
-    #enveloppe_paragraphe {
-        margin: 0px auto;
-    }
-
-    .menu_projets ul {
-        width: 100%;
-    }
-
-    .images figure {
-        width: 100%;
-    }
-
-    #carte_google {
-        display: flex;
-        position: absolute;
-        width: 100%;
-        margin-left: 1px;
-        transform: translateY(0%);
-    }
-
-    #titre_contact {
-        position: absolute;
-        margin: 0px auto;
-        width: 98%;
-        background-color: rgba(255, 255, 255, 1);
-        transform: translateY(300%);
-    }
-
-}*/
 
 @media screen and (max-width: 600px) {
 
@@ -720,33 +655,35 @@ textarea {
         transform: translateY(300%);
     }
 
-}
-
-@media screen and (max-width: 605px) {
-
-
-    #enveloppe_paragraphe {
-        position: absolute;
-        justify-content: center;
-        width: 100%;
-        transform: translateY(100%);
+    #titre_contact #button {
+        font-size: 0.75rem;
     }
 
 
-    #pc_image {
-        justify-content: center;
+}
+
+@media screen and (max-width: 1195px) {
+
+    #nos_services {
+        height: 1000px;
     }
 
     .container_services {
         display: flex;
-        justify-content: center;
-        position: relative;
-        height: 650px;
-        margin-top: 70px;
-        justify-content: space-between;
+        flex-direction: column;
     }
-}
 
+    #enveloppe_paragraphe {
+        justify-content: center;
+        transform: translateY(50%);
+    }
+
+    .container_services_description {
+        justify-content: center;
+        bottom: -70px;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
 
@@ -800,6 +737,3 @@ textarea {
         top: -35px;
     }
 }*/
-
-
-

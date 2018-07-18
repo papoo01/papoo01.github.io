@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('fonts/cac_champagne-webfont.eot');
+    src: url('fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/cac_champagne-webfont.woff2') format('woff2'),
+    url('fonts/cac_champagne-webfont.woff') format('woff'),
+    url('fonts/cac_champagne-webfont.ttf') format('truetype'),
+    url('fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: url('bb.jpg');
+}
+
+@media screen and (max-width: 600px) {
+    .flexbody {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .liseret_to_left {
+        display: none;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    font-size: 1em;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.flexbody {
+    display: flex;
+}
+
+.liseret_to_left {
+    border: 3px solid black;
+    opacity: 0.8;
+    background-color: #0F0303;
+    border-radius: 15px;
+    position: absolute;
+    /* placer l'élément n'importe oû */
+    top: 0;
+    /* placer l'élément indépendamment des autres */
+    bottom: 0;
+    width: 100px;
+    left: 0;
+}
+
+.content {
+    margin-left: 10%;
+    padding: 1%;
+}
